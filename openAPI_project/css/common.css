@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+
+body {
+    font-family: 'Pretendard';
+}
+
+.container {
+    width: 1200px;
+    height: 100%;
+    margin:0 auto;
+    background-color: #aaa;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 240px;
+    /* background-color: gold; */
+
+}
+.header_top_add{
+    width: 1200px; height: 70px; margin: 0 auto; background-color: #f4f4f4;
+}
+.header_top_add_color{width: 100%; height: 70px; background-color: #f4f4f4; }
+.header_top_add> img{width: 100%; height: 100%;}
+
+
+
+.header_nav{
+    width: 1200px; height: 42px; background-color: aliceblue;
+}
+.header_nav_1>li{float: left;}
+.header_nav_2>li{float: left;}
+.header_nav_3>li{display:flexbox; flex-direction: row; }
+.header_mid{
+    width: 100%; height: 50%; background-color: pink;
+}
+.logo{ width: 185px; height: 80px; background-color: #aaa;}
+.logo> img{width: 180px; height: 66px; display: block; margin: auto;}
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 350px;
+    background-color: yellow;
+}
