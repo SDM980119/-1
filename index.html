@@ -24,15 +24,16 @@
                     alt="">
             </div>
         </div>
-        <!-- 헤더속 네비,검색 등등 -->
         <div class="container">
+            
             <div class="header_nav">
                 <div class="header_nav_dom">
+                    <!-- 교보문고에서 svg 가져옴 -->
                     <svg width="226" height="42" viewBox="0 0 226 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_9_267)">
-                        <path d="M-360 206.998V0.022915L159.58 0.022915C159.58 0.022915 179.08 -1.35128 188.066 17.1839C198.123 37.9462 207.811 42 221.891 42L1560 41.8008V207L-360 206.998Z" fill="white" ></path></g><defs><clipPath>
-                        <rect width="226" height="42" fill="white" ></rect></clipPath></defs></svg>
-                </div>
+                            <path d="M-360 206.998V0.022915L159.58 0.022915C159.58 0.022915 179.08 -1.35128 188.066 17.1839C198.123 37.9462 207.811 42 221.891 42L1560 41.8008V207L-360 206.998Z" fill="white" ></path></g><defs><clipPath>
+                                <rect width="226" height="42" fill="white" ></rect></clipPath></defs></svg>
+                            </div>
                 <div class="header_nav1_box1">
                     <!-- 교보문고에서 svg 가져옴 -->
                     <div id="kyboSvg">
@@ -96,7 +97,8 @@
                     <ul>
                         <li>브랜드 더보기</li>
                         <li id="세모화살표"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="12" fill="#767676" viewBox="-3 -1 13 12" stroke="none" class="ml-[5px]">
-                            <desc>세모 아래방향 아이콘sdfsdfs</desc>
+                            <desc>세모 아래방향 아이콘</desc>
+                             <!-- 교보문고에서 가져옴 -->
                             <g clip-path="url(#ico_tri_down_svg__a)">
                                 <path fill="current" d="m6 9.5-4-6h8z"></path></g>
                                 <defs><clipPath id="ico_tri_down_svg__a">
@@ -117,16 +119,34 @@
                 </div>
             </div>
 
+            <!-- 헤더속 네비,검색 등등 -->
             <div class="header_mid">
-                <div class="logo"><img
+                <img class="logo"
                         src="https://contents.kyobobook.co.kr/resources/fo/images/common/ink/united/logo_book.svg"
                         alt="메인로고">
+                <!-- 검색상자 -->
+                <div class="search">
+                    <div class="button1">통합검색
+                        <i class="fa-sharp fa-solid fa-caret-down"></i></i></div>
+                        <input class="header_mid_search" placeholder="이 책을 절대 지나치지 마세요" type="search" value></input>
+                        <div class="search_icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg>
+                        </div>
+                    </div>
+                    <!-- 우측 아이콘들 -->
+                <div class="header_mid_icons">
+                    <div class="header_mid_icons1"><img class="header_mid_icons1_1" src="./img/쇼핑카트.png" alt="쇼핑카트"></div>
+                <!-- <svg class="header_mid_icons1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg> -->
+                <!-- <img src="/img/마이페이지.png" alt="마이페이지" class="header_mid_icons2"> -->
+                    <div class="header_mid_circle">                        
+                        <svg class="header_mid_icons2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                        </svg> </div>
+                    </div>
                 </div>
-                <search class="header_mid_search">통합검색
-
-                </search>
-                <div class="bottom">
-
+                
                 </div>
 
             </div>

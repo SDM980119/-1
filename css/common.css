@@ -57,26 +57,44 @@ header {
 
 /* 헤더 네비 */
 .header_nav{
-    width: 1200px; height: 42px; display: flex; flex-direction: row;
+    width: 100%; height: 42px; display: flex; flex-direction: row;
      background-color: #f4f4f4;}
 .header_nav_dom{width: 170px; position: relative; z-index: 2;}
-.헤더네비{width: 485px;position: relative; top: 10px; z-index: 1; font-weight: bold;}
+.헤더네비{width: 485px;height: 42px; position: relative; top: 10px; z-index: 1; font-weight: bold;}
 .service_mall_link{font-size: 14px;}
 .header_nav1_box1{ width: 560x; height: 42px; }
 .header_nav1_box2{width: 90px; height: 24px;position: relative; top: 18px; flex-wrap:nowrap;color: gray; font-size: 12px; line-height: 16px;}
 .header_nav1_box2 ul {display: flex; }
-.header_nav1_box3 {width: 361px;height: 42px; margin-left:auto; background-color: gold;}
-.header_nav1_box3 ul{display: flex; color: #595959; padding: 10px;}
+.header_nav1_box3 {width: 361px;height: 42px; margin-left:auto;}
+.header_nav1_box3 ul{display: flex; color: #595959; padding: 10px; font-size: 12px;}
+.header_nav_2 li{ display: flex; position: relative; top: 5px; }
+.header_nav_2 li:not(:last-child)::after{content: "|";margin: 0 7px; font-size: 8px; position: relative; top: 3px; }
 
-
+/* 헤더 중간 로고 및 검색창 등등 */
 .header_mid{
-    width: 100%; height: 50%; background-color: pink;
+    width: 100%; height: 80px; background-color: white; display: flex;
 }
-.logo{ width: 185px; height: 80px; background-color: white;}
-.logo> img{width: 180px; height: 65px; display: block; margin: auto;}
-.header_mid_search {width: 560;height: 55; display:flex; background-color: blueviolet; float: right;}
+.logo{ width: 180px; height: 66px; margin-top: 5px;}
+.search{width:560px; height: 50px; margin: 23px 0 0 20px  ; display: flex;    
+    border-radius: 50px; border: 1px solid gray; }
+.button1{width: 116px; height: 50px; padding: 13px 0 13px 24px;  font-size: 14px; }
+.button1>i{width: 12px; height: 12px; padding-left:13px ;}
+.header_mid_search {width: 395px; height: 43px; padding: 5px 0 0 16px; font-size: 14px; line-height: 22px;  border: none; outline: none; }
+.button1:not(:last-child)::after{content: "|"; margin-left: 20px; font-size: 10px; color:gray ;position: relative; bottom: 2px; } 
+.search:focus-within{outline: 0.2px solid black;}
+.search_icon{width: 24px; height: 24px; padding-top:10px ;}
+.search_icon> i{width: 24px; height: 24px; padding-top:10px ;}
+/* 우측 아이콘들 */
+.header_mid_icons{padding-left:300px ; display: flex; position: relative; top: 15px;}
+.header_mid_icons1{width: 36px; height: 36px; margin: 5px 10px 0 0; }
+.header_mid_icons1_1{width: 36px; height: 36px; margin: 0px 0px 0px 0px; }
+.header_mid_icons2{width: 48px;height: 48px; border-radius: 50%; position: relative; background: linear-gradient(to bottom, #6BCB45, #4DAC27);box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5)}
+.header_mid_icons2{width: 36px; height: 36px; margin: 0 auto;position: absolute; top: 50%; left: 50%;transform: translate(-50%, -50%); color: white;}
+/* .header_mid_icons1 > img{width: 36px; height: 36px; margin: 5px 10px 0 0; }
+.header_mid_circle{width: 48px;height: 48px; border-radius: 50%; position: relative; background: linear-gradient(to bottom, #6BCB45, #4DAC27);box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5)}
+.header_mid_icons2{width: 36px; height: 36px; margin: 0 auto;position: absolute; top: 50%; left: 50%;transform: translate(-50%, -50%); color: white;} */
 
-.bottom{width: 1200; height: 80; background-color: darkblue; display: inline;}
+
 
 /* footer */
 
