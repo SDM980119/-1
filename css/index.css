@@ -1,4 +1,4 @@
-@charset "utf-8";
+/* @charset "utf-8";
 
 /* slider */
 #slider{width: 1200px; height: 345px; margin: 0 auto; background-color: aqua;}
@@ -27,4 +27,4 @@
     width: 1200px;
     height: 500px;
     margin: 0 auto;
-    }
+    } 
