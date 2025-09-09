@@ -27,11 +27,28 @@
 .section2_add_img{width: 274px; height: 96px; position: relative; right: auto; border-radius: 10px;}
 
 /* section3 */
-.section3{width: 1200px; height: 314px;margin: 30px auto 0 ; background-color: #747474;}
+.section3{width: 1328px; height: 314px;margin: 30px auto 0 ; position: relative; background-color: #747474;}
+.section3_circle1{width: 43px; height: 43px; position: absolute; top: 50%; transform: translate(0 50%); display: flex; border-radius: 50%; outline: 1px solid #cccc; font-size: 30px; justify-content:center ; align-items: center;}
+.section3_circle1 img {transform: scaleX(-1);}
+.section3_circle2{width: 43px; height: 43px; position: absolute; top: 50%; right:0% ; 
+    transform: translate(+50% +50%); display: flex; border-radius: 50%; outline: 1px solid #cccc; font-size: 30px; justify-content:center ; align-items: center;}
+
+
+.section3_mid{width: 1200px; height: 260px; background-color: red; position: absolute;
+    bottom: 0; left: 50%; transform: translate(-50%); display: flex; justify-content: space-between;}
+.section3_mid_1{width: 730px; height: 260px;display: flex; position: relative;   bottom: 0; background-color: aqua;}
+.section3_mid_2{width: 450px; height: 196px;display: flex; position: absolute;bottom: 50%; transform: translate(0, +50%); right: 0; justify-content: center;align-items: center; background-color: aqua;}
+.section3_mid_2_2{width: 450px; height: 194px;}
+.section3_mid_2_2 img[src*="21.jpg"],.section3_mid_2_2 img[src*="22.jpg"],.section3_mid_2_2 img[src*="23.jpg"],.section3_mid_2_2 img[src*="24.jpg"],.section3_mid_2_2 img[src*="25.jpg"],.section3_mid_2_2 img[src*="26.jpg"],.section3_mid_2_2 img[src*="27.jpg"],.section3_mid_2_2 img[src*="28.jpg"],.section3_mid_2_2 img[src*="29.jpg"],.section3_mid_2_2 img[src*="30.jpg"],.section3_mid_2_2 img[src*="31.jpg"],.section3_mid_2_2 img[src*="32.jpg"]{
+    width: 134px; height: 134px; display: block; margin-top: 25%;
+}
 
 /* section4 */
-.section4{width: 1200px; height: 180px; margin: 80px auto 0; display: flex; justify-content: space-between; }
+.section4{width: 1200px; height: 180px; margin: 80px auto 0; display: flex;justify-content: space-between; }
 .section4 img{width: 595px; height: 180px; border-radius: 10px;   position: relative; }
 
 /* section5 */
-.section5{width: 1200px; height: 180px; margin: 80px auto 0; display: flex; }
+.section5{width: 1328px; height: 378px; margin: 80px auto 0; display: flex; background-color: darkblue;}
+
+/* section6 */
+.section6{width: 1200px; height: 378px; margin: 80px auto 0; display: flex; background-color: darkblue;}
