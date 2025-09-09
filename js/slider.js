@@ -1,9 +1,22 @@
     
-        var swiper = new Swiper(".mySwiper", {
+        var swiper = new Swiper(".section1_1", {
+            loop:true,
                 autoplay: {
-                    delay: 1000,
+                    delay: 4500,
                     disableOnInteraction: false,
                 },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "fraction",
+                    clickable: true,
+                }
+        });
+        var swiper = new Swiper(".section1_2", {
                 navigation: {
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",

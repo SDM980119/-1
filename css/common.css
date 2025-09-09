@@ -99,8 +99,8 @@ header {
 .header_bottom_green{color:#3c9a17;display: flex; position: relative;}
 .header_bottom_green_dote{width: 4px;height: 4px;font-size: 16px;line-height: 24px;  position: relative;left: 3px;  background-color: #3c9a17; display: inline-block; border-radius: 50%; }
 /* 네비 우측 +버튼 */
-.header_bottom_button{width: 20px; height: 20px;   border-radius: 50%; background-color: #EAEAEA; display:inline-block ;}
-.header_bottom_button_1{width: 7px; height: 7px; position: relative; left: 4.3px; color:#767676 ; font-weight: 700; bottom: 5px;}
+.header_bottom_button{width: 20px; height: 20px;   border-radius: 50%; background-color: #EAEAEA; display:inline-block ; position: relative;}
+.header_bottom_button_1{position: absolute; left: 50%;top: 46%; transform: translate(-50%,-50%); color:#767676 ; font-weight: 700;}
 .header_bottom_nav2{width: 380px; display: flex; margin-left: auto;justify-content: flex-end; position: relative;}
 .header_bottom_nav2 ul{display: flex; gap: 20px; font-size: 14px; color: #595959;
 line-height: 22px; font-weight: 400;}
