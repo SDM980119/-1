@@ -1,9 +1,9 @@
-    
+
         //섹션1의 1번 슬라이드  
         var swiper1 = new Swiper(".section1_1", {
             loop:true,
                 autoplay: {
-                    delay: 500,
+                    delay: 4500,
                     disableOnInteraction: false,
                     
                 },
@@ -16,7 +16,18 @@
                     el: ".swiper-pagination",
                     type: "custom",
                     renderCustom: function (swiper, current, total) {
-                        return current + ' - ' + total;
+                        return ` 
+                                <div class="swiper-pagination_1">
+                                <div class="section1_nav1_1">
+                                <img src="./img/btn_swiper_list@2x.png" alt="">
+                                </div>
+                                <div class="section1_nav_pagi">${current} - ${total}</div>
+                                <div class="section1_nav2_1">
+                                <img src="./img/btn_swiper_list@2x.png" alt=""></div>
+                                <a href="#">전체보기</a>
+                                </div>
+                                `;   
+                        // current + ' - ' + total;
                     },
                 }
         });
@@ -48,15 +59,19 @@
         //섹션1의 2번 슬라이드
         var swiper = new Swiper(".section1_2", {
                 navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
+                    nextEl: ".section1_slider2_next",
+                    prevEl: ".section1_slider2_prev",
 
                 },
                 pagination: {
                     el: ".swiper-pagination",
                     type: "custom",
                     renderCustom: function (swiper, current, total) {
-                        return current + ' - ' + total;
+                        return `
+                        <div class="swiper_slider_2"
+                                <div class="section1_nav_pagi_2">${current} - ${total}</div>
+                                </div>
+                        `
                     },
                 }
         });
@@ -68,6 +83,7 @@
         //     position: relative;
         //     transition-property: transform;
         //     display: block}
+        
         //섹션3의 2번 슬라이드 
         var swiper = new Swiper(".section3_mid_2_2", {
                 loop:true,
@@ -138,9 +154,10 @@
                 slidesPerView: 3,
                 spaceBetween: 30,
                 allowTouchMove: false,
+                speed: 600
             });
 
-            const slideStep = 6; // 👈 한 번 클릭할 때 넘길 슬라이드 수
+            const slideStep = 3; // 👈 한 번 클릭할 때 넘길 슬라이드 수
 
             document.querySelector('.section17_circle2').addEventListener('click', function () {
                 const nextIndex = swiper.activeIndex + slideStep;

@@ -3,7 +3,7 @@ async function loadBooksToSections() {
 
     // 섹션별 쿼리와 wrapper 선택자 매핑
     const sections = [
-        { selector: '.section5_swiper .swiper-wrapper', query: '한권' ,size:10},
+        { selector: '.section5_swiper .swiper-wrapper', query: '집가고싶다' ,size:10},
         { selector: '.section6_swiper .swiper-wrapper', query: '추천' ,size:6},
         { selector: '.section7_swiper .swiper-wrapper', query: 'AI기초',size:50 },
         { selector: '.section11_swiper .swiper-wrapper', query: '인기',size:10 },
