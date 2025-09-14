@@ -37,7 +37,7 @@
                 <div class="header_nav1_box1">
                     <!-- 교보문고에서 svg 가져옴 -->
                     <div id="kyboSvg">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="헤더네비">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="header_nav1_box1_nav">
                         <g transform="translate(4 0)">
                             <g><a target="_self" class="service_mall_link" href="#">
                                     <path
@@ -221,11 +221,20 @@
                     <div class="swiper-slide"><a href="#"><img src="./img/section1/34.jpg" alt=""></a></div>
                     <div class="swiper-slide"><a href="#"><img src="./img/section1/35.jpg" alt=""></a></div>
                     <div class="swiper-slide"><a href="#"><img src="./img/section1/36.jpg" alt=""></a></div>
-                
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper_stop">
+                    <div class="swiper_stop_1">
+                        <svg class="swiper_stop_1_1" width="16" height="16" fill="white"><path d="M4 3h2v10H4zM10 3h2v10h-2z"></path></svg>
+                        <svg class="swiper_stop_1_2" width="16" height="16" fill="white"><path fill="current" d="M12.5 7.134a1 1 0 0 1 0 1.732l-6 3.464a1 1 0 0 1-1.5-.866V4.536a1 1 0 0 1 1.5-.866z"></path></svg>
+                    </div>
+                    <div class="seiper_nav">
+                        <div class="section1_nav1"><img src="./img/btn_swiper_list@2x.png" alt=""></div>
+                        <div class="swiper-pagination"></div> 
+                        <div class="section1_nav2"><img src="./img/btn_swiper_list@2x.png" alt=""></div>
+                        <a href="#">전체보기</a>
+                    </div>
+                </div>
+                
             </div>
         </div>
         <div class="section1_slider2">
@@ -345,8 +354,11 @@
         </div>
         <div class="section3_mid">
             <div class="section3_mid_1">
-                <div class="swiper-slide">
-
+                <div class="swiper section3_mid_2_2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="section3_mid_2">
@@ -907,9 +919,21 @@
 </section>
 
 
-    <footer>
+<footer>
         <hr>
-        <div class="section_bottom"></div>
+        <div class="section_bottom">
+            <div class="section_bottom_left">
+                <span class="section_bottom_left_1">공지사항</span>
+                <a class="section_bottom_left_2" href="#" >ReadLog 서비스 이관 안내(08/29)</a>
+                <a href="#" class="section_bottom_left_3">더보기  +</a>
+            </div>
+            <div class="section_bottom_right">
+                <span class="section_bottom_right_1">당첨자발표</span>
+                <a class="section_bottom_right_2" href="#">[로맨스/BL소설][25년 8월] 로B 50년 대여 💸 어랏! 캐시 💸(지연 안내)</a>
+                <a class="section_bottom_right_3" href="#">더보기 +</a>
+
+            </div>
+        </div>
         <hr>
         <div class="footer_1">
             <div class="footer_left">
@@ -944,20 +968,29 @@
                             </div>
                         </div>
                         <div class="footer_right_top_2">
-                            <img src="./img/btn_footer_sns_youtube_v2@2x.png" alt="">
-                            <img src="./img/btn_footer_sns_fb_v2@2x.png" alt="">
-                            <img src="./img/btn_footer_sns_insta_v2@2x.png" alt="">
+                            <a href="#"><img src="./img/btn_footer_sns_youtube_v2@2x.png" alt=""></a>
+                            <a href="#"><img src="./img/btn_footer_sns_fb_v2@2x.png" alt=""></a>
+                            <a href="#"><img src="./img/btn_footer_sns_insta_v2@2x.png" alt=""></a>
                         </div>
                     </div>
                     <div class="footer_right_mid_1">
-                        <span>토스페이먼츠 구매안전서비스</span>
+                        <span>토스페이먼츠 구매안전서비스  <a href="#">서비스가입확인</a></span>
+                        
 
                     </div>
                     <div class="footer_right_mid_2">
+                         <span>고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한
+                            토스페이먼츠의 구매안전서비스를 이용하실 수 있습니다.</span>
 
                     </div>
                     <div class="footer_right_bottom">
-
+                        <a href="./정보보호 관리체계.html" target="_blank" class="footer_right_bottom_1">
+                            <img src="./img/인증획득.png" alt="">
+                            <span>정보보호관리체계ISMS인증획득</span>
+                        </a>
+                            <p class="footer_right_bottom_2">[인증범위] 인터넷 교보문고 및 브랜드 서비스 운영 <br>[유효기간] 2023.11.15 ~ 2026.11.14
+                            </p>
+                        
                     </div>
                 </div>
                 
@@ -970,7 +1003,7 @@
     <!-- 기본 슬라이드  -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/slider.js"></script>
-    <!-- <script src="js/openAPI.js"></script> -->
+    <script src="js/openAPI.js"></script>
 
 
 

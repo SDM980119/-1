@@ -1,22 +1,50 @@
     
         //섹션1의 1번 슬라이드  
-        var swiper = new Swiper(".section1_1", {
+        var swiper1 = new Swiper(".section1_1", {
             loop:true,
                 autoplay: {
-                    delay: 4500,
+                    delay: 500,
                     disableOnInteraction: false,
+                    
                 },
                 navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
+                    nextEl: ".section1_nav2",
+                    prevEl: ".section1_nav1",
 
                 },
                 pagination: {
                     el: ".swiper-pagination",
-                    type: "fraction",
-                    clickable: true,
+                    type: "custom",
+                    renderCustom: function (swiper, current, total) {
+                        return current + ' - ' + total;
+                    },
                 }
         });
+            document.querySelector('.swiper_stop_1_2').addEventListener('click', () => {
+            swiper1.autoplay.start();
+            });
+
+            document.querySelector('.swiper_stop_1_1').addEventListener('click', () => {
+            swiper1.autoplay.stop();
+            });
+
+                const playBtn = document.querySelector('.swiper_stop_1_1'); // 정지 모양
+                const pauseBtn = document.querySelector('.swiper_stop_1_2'); // 재생 모양
+
+                playBtn.addEventListener('click', () => {
+                    playBtn.style.display = 'none';   // 정지 모양 숨기기
+                    pauseBtn.style.display = 'block'; // 재생 모양 표시
+                    // 여기에 슬라이더 재생 기능 추가 가능
+                });
+
+                pauseBtn.addEventListener('click', () => {
+                    pauseBtn.style.display = 'none';   // 재생 모양 숨기기
+                    playBtn.style.display = 'block';   // 정지 모양 표시
+                    // 여기에 슬라이더 정지 기능 추가 가능
+                }); 
+
+
+
         //섹션1의 2번 슬라이드
         var swiper = new Swiper(".section1_2", {
                 navigation: {
@@ -26,8 +54,10 @@
                 },
                 pagination: {
                     el: ".swiper-pagination",
-                    type: "fraction",
-                    clickable: true,
+                    type: "custom",
+                    renderCustom: function (swiper, current, total) {
+                        return current + ' - ' + total;
+                    },
                 }
         });
         //섹션3의 1번 슬라이드

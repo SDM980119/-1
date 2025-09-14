@@ -3,24 +3,24 @@ async function loadBooksToSections() {
 
     // 섹션별 쿼리와 wrapper 선택자 매핑
     const sections = [
-        { selector: '.section5_swiper .swiper-wrapper', query: '한권' },
-        { selector: '.section6_swiper .swiper-wrapper', query: '추천' },
-        { selector: '.section7_swiper .swiper-wrapper', query: 'AI기초' },
-        { selector: '.section11_swiper .swiper-wrapper', query: '인기' },
-        { selector: '.section14_swiper .swiper-wrapper', query: '교보문고' },
-        { selector: '.section15_swiper .swiper-wrapper', query: '출판' },
+        { selector: '.section5_swiper .swiper-wrapper', query: '한권' ,size:10},
+        { selector: '.section6_swiper .swiper-wrapper', query: '추천' ,size:6},
+        { selector: '.section7_swiper .swiper-wrapper', query: 'AI기초',size:50 },
+        { selector: '.section11_swiper .swiper-wrapper', query: '인기',size:10 },
+        { selector: '.section14_swiper .swiper-wrapper', query: '교보문고',size:12 },
+        { selector: '.section15_swiper .swiper-wrapper', query: '출판',size:7 },
 
         // 필요하면 더 추가
     ];
 
-    sections.forEach(async ({ selector, query }) => {
+    sections.forEach(async ({ selector, query, size }) => {
         const wrapper = document.querySelector(selector);
         if (!wrapper) return; // 혹시 섹션이 없으면 무시
 
         const params = new URLSearchParams({
             target: 'title',
             query: query,
-            size: 12
+            size: size
         });
 
         const url = `https://dapi.kakao.com/v3/search/book?${params}`;
