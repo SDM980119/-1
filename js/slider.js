@@ -1,22 +1,22 @@
 
-        //섹션1의 1번 슬라이드  
-        var swiper1 = new Swiper(".section1_1", {
-            loop:true,
-                autoplay: {
-                    delay: 4500,
-                    disableOnInteraction: false,
-                    
-                },
-                navigation: {
-                    nextEl: ".section1_nav2",
-                    prevEl: ".section1_nav1",
+//섹션1의 1번 슬라이드  
+var swiper1 = new Swiper(".section1_1", {
+    loop: true,
+    autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
 
-                },
-                pagination: {
-                    el: ".swiper-pagination",
-                    type: "custom",
-                    renderCustom: function (swiper, current, total) {
-                        return ` 
+    },
+    navigation: {
+        nextEl: ".section1_nav2",
+        prevEl: ".section1_nav1",
+
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        type: "custom",
+        renderCustom: function (swiper, current, total) {
+            return ` 
                                 <div class="swiper-pagination_1">
                                 <div class="section1_nav1_1">
                                 <img src="./img/btn_swiper_list@2x.png" alt="">
@@ -26,156 +26,156 @@
                                 <img src="./img/btn_swiper_list@2x.png" alt=""></div>
                                 <a href="#">전체보기</a>
                                 </div>
-                                `;   
-                        // current + ' - ' + total;
-                    },
-                }
-        });
-            document.querySelector('.swiper_stop_1_2').addEventListener('click', () => {
-            swiper1.autoplay.start();
-            });
+                                `;
+            // current + ' - ' + total;
+        },
+    }
+});
+document.querySelector('.swiper_stop_1_2').addEventListener('click', () => {
+    swiper1.autoplay.start();
+});
 
-            document.querySelector('.swiper_stop_1_1').addEventListener('click', () => {
-            swiper1.autoplay.stop();
-            });
+document.querySelector('.swiper_stop_1_1').addEventListener('click', () => {
+    swiper1.autoplay.stop();
+});
 
-                const playBtn = document.querySelector('.swiper_stop_1_1'); // 정지 모양
-                const pauseBtn = document.querySelector('.swiper_stop_1_2'); // 재생 모양
+const playBtn = document.querySelector('.swiper_stop_1_1'); // 정지 모양
+const pauseBtn = document.querySelector('.swiper_stop_1_2'); // 재생 모양
 
-                playBtn.addEventListener('click', () => {
-                    playBtn.style.display = 'none';   // 정지 모양 숨기기
-                    pauseBtn.style.display = 'block'; // 재생 모양 표시
-                    // 여기에 슬라이더 재생 기능 추가 가능
-                });
+playBtn.addEventListener('click', () => {
+    playBtn.style.display = 'none';   // 정지 모양 숨기기
+    pauseBtn.style.display = 'block'; // 재생 모양 표시
+    // 여기에 슬라이더 재생 기능 추가 가능
+});
 
-                pauseBtn.addEventListener('click', () => {
-                    pauseBtn.style.display = 'none';   // 재생 모양 숨기기
-                    playBtn.style.display = 'block';   // 정지 모양 표시
-                    // 여기에 슬라이더 정지 기능 추가 가능
-                }); 
+pauseBtn.addEventListener('click', () => {
+    pauseBtn.style.display = 'none';   // 재생 모양 숨기기
+    playBtn.style.display = 'block';   // 정지 모양 표시
+    // 여기에 슬라이더 정지 기능 추가 가능
+});
 
 
 
-        //섹션1의 2번 슬라이드
-        var swiper = new Swiper(".section1_2", {
-                navigation: {
-                    nextEl: ".section1_slider2_next",
-                    prevEl: ".section1_slider2_prev",
+//섹션1의 2번 슬라이드
+var swiper = new Swiper(".section1_2", {
+    navigation: {
+        nextEl: ".section1_slider2_next",
+        prevEl: ".section1_slider2_prev",
 
-                },
-                pagination: {
-                    el: ".swiper-pagination",
-                    type: "custom",
-                    renderCustom: function (swiper, current, total) {
-                        return `
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        type: "custom",
+        renderCustom: function (swiper, current, total) {
+            return `
                         <div class="swiper_slider_2"
                                 <div class="section1_nav_pagi_2">${current} - ${total}</div>
                                 </div>
                         `
-                    },
-                }
-        });
-        //섹션3의 1번 슬라이드
-        // .swiper-slide {
-        //     flex-shrink: 0;
-        //     width: 100%;
-        //     height: 100%;
-        //     position: relative;
-        //     transition-property: transform;
-        //     display: block}
-        
-        //섹션3의 2번 슬라이드 
-        var swiper = new Swiper(".section3_mid_2_2", {
-                loop:true,
-                slidesPerView: 3,
-                spaceBetween: 30,
-                allowTouchMove: false,
-                navigation: {
-                    nextEl: ".section3_circle2",
-                    prevEl: ".section3_circle1",
-                }
-        });
+        },
+    }
+});
+//섹션3의 1번 슬라이드
+// .swiper-slide {
+//     flex-shrink: 0;
+//     width: 100%;
+//     height: 100%;
+//     position: relative;
+//     transition-property: transform;
+//     display: block}
 
-        //섹션12번 슬라이드
-        document.addEventListener("DOMContentLoaded", function () {
-            var swiper = new Swiper(".section12_swiper", {
-                slidesPerView: 6,
-                spaceBetween: 30,
-                allowTouchMove: false,
-            });
+//섹션3의 2번 슬라이드 
+var swiper = new Swiper(".section3_mid_2_2", {
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    allowTouchMove: false,
+    navigation: {
+        nextEl: ".section3_circle2",
+        prevEl: ".section3_circle1",
+    }
+});
 
-            const slideStep = 6; // 👈 한 번 클릭할 때 넘길 슬라이드 수
+//섹션12번 슬라이드
+document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper(".section12_swiper", {
+        slidesPerView: 6,
+        spaceBetween: 30,
+        allowTouchMove: false,
+    });
 
-            document.querySelector('.section12_circle2').addEventListener('click', function () {
-                const nextIndex = swiper.activeIndex + slideStep;
-                const maxIndex = swiper.slides.length - swiper.params.slidesPerView;
+    const slideStep = 6; // 👈 한 번 클릭할 때 넘길 슬라이드 수
 
-                swiper.slideTo(Math.min(nextIndex, maxIndex)); // 범위 초과 방지
-            });
+    document.querySelector('.section12_circle2').addEventListener('click', function () {
+        const nextIndex = swiper.activeIndex + slideStep;
+        const maxIndex = swiper.slides.length - swiper.params.slidesPerView;
 
-            document.querySelector('.section12_circle1').addEventListener('click', function () {
-                const prevIndex = swiper.activeIndex - slideStep;
-                swiper.slideTo(Math.max(prevIndex, 0)); // 최소 0 이상
-            });
-        });
+        swiper.slideTo(Math.min(nextIndex, maxIndex)); // 범위 초과 방지
+    });
 
-
-
-        //섹션16번 슬라이드
-        document.addEventListener("DOMContentLoaded", function () {
-            var swiper = new Swiper(".section16_swiper", {
-                slidesPerView: 5,
-                spaceBetween: 30,
-                allowTouchMove: false,
-            });
-
-            const slideStep = 10; // 👈 한 번 클릭할 때 넘길 슬라이드 수
-
-            document.querySelector('.section16_circle2').addEventListener('click', function () {
-                const nextIndex = swiper.activeIndex + slideStep;
-                const maxIndex = swiper.slides.length - swiper.params.slidesPerView;
-
-                swiper.slideTo(Math.min(nextIndex, maxIndex)); // 범위 초과 방지
-            });
-
-            document.querySelector('.section16_circle1').addEventListener('click', function () {
-                const prevIndex = swiper.activeIndex - slideStep;
-                swiper.slideTo(Math.max(prevIndex, 0)); // 최소 0 이상
-            });
-        });
+    document.querySelector('.section12_circle1').addEventListener('click', function () {
+        const prevIndex = swiper.activeIndex - slideStep;
+        swiper.slideTo(Math.max(prevIndex, 0)); // 최소 0 이상
+    });
+});
 
 
 
+//섹션16번 슬라이드
+document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper(".section16_swiper", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        allowTouchMove: false,
+    });
 
+    const slideStep = 10; // 👈 한 번 클릭할 때 넘길 슬라이드 수
 
-        // 섹션17번 슬라이드
-        document.addEventListener("DOMContentLoaded", function () {
-            var swiper = new Swiper(".section17_swiper", {
-                slidesPerView: 3,
-                spaceBetween: 30,
-                allowTouchMove: false,
-                speed: 600
-            });
+    document.querySelector('.section16_circle2').addEventListener('click', function () {
+        const nextIndex = swiper.activeIndex + slideStep;
+        const maxIndex = swiper.slides.length - swiper.params.slidesPerView;
 
-            const slideStep = 3; // 👈 한 번 클릭할 때 넘길 슬라이드 수
+        swiper.slideTo(Math.min(nextIndex, maxIndex)); // 범위 초과 방지
+    });
 
-            document.querySelector('.section17_circle2').addEventListener('click', function () {
-                const nextIndex = swiper.activeIndex + slideStep;
-                const maxIndex = swiper.slides.length - swiper.params.slidesPerView;
-
-                swiper.slideTo(Math.min(nextIndex, maxIndex)); // 범위 초과 방지
-            });
-
-            document.querySelector('.section17_circle1').addEventListener('click', function () {
-                const prevIndex = swiper.activeIndex - slideStep;
-                swiper.slideTo(Math.max(prevIndex, 0)); // 최소 0 이상
-            });
-        });
+    document.querySelector('.section16_circle1').addEventListener('click', function () {
+        const prevIndex = swiper.activeIndex - slideStep;
+        swiper.slideTo(Math.max(prevIndex, 0)); // 최소 0 이상
+    });
+});
 
 
 
-        //통합 슬라이드
-    document.addEventListener("DOMContentLoaded", function () {
+
+
+// 섹션17번 슬라이드
+document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper(".section17_swiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        allowTouchMove: false,
+        speed: 600
+    });
+
+    const slideStep = 3; // 👈 한 번 클릭할 때 넘길 슬라이드 수
+
+    document.querySelector('.section17_circle2').addEventListener('click', function () {
+        const nextIndex = swiper.activeIndex + slideStep;
+        const maxIndex = swiper.slides.length - swiper.params.slidesPerView;
+
+        swiper.slideTo(Math.min(nextIndex, maxIndex)); // 범위 초과 방지
+    });
+
+    document.querySelector('.section17_circle1').addEventListener('click', function () {
+        const prevIndex = swiper.activeIndex - slideStep;
+        swiper.slideTo(Math.max(prevIndex, 0)); // 최소 0 이상
+    });
+});
+
+
+
+//통합 슬라이드
+document.addEventListener("DOMContentLoaded", function () {
     const slideStep = 6; // 한 번에 이동할 슬라이드 수
 
     // 관리할 섹션 리스트
