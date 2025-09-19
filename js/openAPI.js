@@ -41,7 +41,7 @@ async function loadBooksToSections() {
                 const slide = document.createElement('div');
                 slide.classList.add('swiper-slide');
                 slide.innerHTML = `
-                    <a href="#">
+                    <a href="../sub.html">
                         <div class="section_slide">
                             <img src="${book.thumbnail}" alt="${book.title}">
                         </div>

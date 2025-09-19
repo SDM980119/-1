@@ -16,4 +16,4 @@ a {
 .home_nav li img{width: 14px; height: 16px;}
 .home_nav{display: flex; font-size: 13px;}
 .home_nav li{padding-left: 20px;}
-.home_nav li:not(:first-child)::before{content: "";border: ; }
+.home_nav li:not(:first-child)::before{background-image: url(./);}
